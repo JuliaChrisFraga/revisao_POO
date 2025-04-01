@@ -9,8 +9,7 @@ class Domino():
     
     def valor(self):
         soma = self.a + self.b
-        mensagem = f"Total de pontos: {soma}"
-        return mensagem
+        return soma
     
     def  __str__(self):
         return f'({self.a},{self.b})'
@@ -19,6 +18,6 @@ d1=Domino(2,6)
 d2=Domino(4,3)
 print(d1.mostrar_pontos())
 print(d2.mostrar_pontos())
-print(d1.valor())
-print(d2.valor())
+print("Total de pontos: ", d1.valor())
+print("Total de pontos: ", d2.valor())
 print(d1.__str__())

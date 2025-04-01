@@ -37,7 +37,7 @@ class Funcionario():
             self.salario = self.salario + self.salario*10/100
         return self.salario
     
-    def mostrarFuncionario():
+    def mostrarFuncionario(self):
         idade = self.idade()
         tempo = self.tempo_de_casa()
         mensagem = f"ID: {self.id}, \nNome: {self.nome}; \nSobrenome: {self.sobrenome}; \nIdade: {idade} anos; \nAntiguidade: {tempo} anos; \nSalário: {self.salario} euros."

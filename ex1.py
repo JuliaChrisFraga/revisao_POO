@@ -19,11 +19,12 @@ class Circle:
         if (distancia <= self.r):
             return True
         else:
-            return False 
+            return False
+    
+    def __str__(self):
+        return f"P={self.perimetro()}, A={self.area()}"
 
 c1= Circle(2,2,3)
-print()
 print(c1)
 print(c1.test_pertencente(0,0))
 print(c1.test_pertencente(0,-1))
-        

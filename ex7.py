@@ -85,8 +85,9 @@ class Loja():
         return f"Produto adicionado com sucesso!"
     
     def listar_estoque(self):
+        print("Estoque da loja:")
         for produto in self.produtos:
-            print(produto, "\n")
+            print(produto)
 
 loja = Loja("Papaya")
 
@@ -97,7 +98,7 @@ prod2.vender(2)
 prod1.reabastecer(3)
 
 av1 = Avaliacoes("Julia", "Queria rosa mas veio magenta", 6)
-prod1.adicionar_avaliacao(av1)
-# print(prod1.avaliacoes)
+#prod1.adicionar_avaliacao(av1)
+#print(prod1.avaliacoes)
 
-# print(loja.listar_estoque())
+print(loja.listar_estoque())

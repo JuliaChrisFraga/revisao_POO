@@ -136,6 +136,7 @@ print("\nAdicionando avaliação: ", prod1.adicionar_avaliacao("Julia", "A câme
 print("Adicionando avaliação: ", prod2.adicionar_avaliacao("Mariana", "Não deu certo >:(", 1))
 print("\nExibindo detalhes: ") 
 prod1.exibir_detalhes()
+prod2.exibir_detalhes()
 
 print("\n")
 loja.listar_estoque()
